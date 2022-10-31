@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:trackify/trackingdetail.dart';
 
 class CustomerHome extends StatefulWidget {
   const CustomerHome({super.key});
@@ -30,10 +31,9 @@ class _CustomerHomeState extends State<CustomerHome> {
               child: Text(
                 "Enter Your Code",
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 24,
-                  fontWeight: FontWeight.w600
-                ),
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.w600),
               ),
             ),
             TextFormField(
@@ -48,12 +48,20 @@ class _CustomerHomeState extends State<CustomerHome> {
             Padding(
               padding: const EdgeInsets.only(top: 40.0),
               child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.white
-                ),
-                onPressed: () {}, 
-                child: Text("Track", style: TextStyle(color: Theme.of(context).primaryColor),)
-              ),
+                  style:
+                      ElevatedButton.styleFrom(backgroundColor: Colors.white),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Details(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    "Track",
+                    style: TextStyle(color: Theme.of(context).primaryColor),
+                  )),
             )
           ],
         ),
