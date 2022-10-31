@@ -28,8 +28,8 @@ class _AdminHomeState extends State<AdminHome> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(""),
-        backgroundColor: Colors.transparent,
+        title: const Text("Perbaikan"),
+        backgroundColor: Theme.of(context).primaryColor,
         elevation: 0,
       ),
       floatingActionButton: FloatingActionButton(
