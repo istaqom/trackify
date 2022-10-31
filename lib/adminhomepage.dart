@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:trackify/tambahperbaikan.dart';
 import 'package:trackify/togglebutton.dart';
 
 class AdminHome extends StatefulWidget {
@@ -34,7 +35,12 @@ class _AdminHomeState extends State<AdminHome> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const AddPerbaikan(),
+            ),
+          );
         },
         child: const Icon(
           Icons.add,
