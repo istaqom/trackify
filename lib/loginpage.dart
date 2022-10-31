@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:trackify/adminhomepage.dart';
+import 'package:trackify/customerhomepage.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key, this.suffixIcon});
@@ -87,7 +88,7 @@ class _LoginState extends State<Login> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => const AdminHome(),
+                      builder: (context) => const CustomerHome(),
                     ),
                   );
                 },
