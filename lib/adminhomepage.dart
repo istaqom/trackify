@@ -78,7 +78,150 @@ class GoingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                padding: EdgeInsets.all(16.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16.0),
+                ),
+                side: BorderSide(color: Theme.of(context).primaryColor)
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.25,
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 40.0,
+                          width: 40.0,
+                          color: Theme.of(context).primaryColor,
+                        ),
+                        Text(
+                          "#14124869",
+                          style: TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Putri Qonita Arif",
+                        style: TextStyle(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
+                      Text(
+                        "082157516485",
+                        style: TextStyle(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8.0),
+                        child: Text(
+                          "Status :", 
+                          style: TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        "Belum Dikerjakan", 
+                        style: TextStyle(
+                          color: Theme.of(context).primaryColor,
+                        )
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                padding: EdgeInsets.all(16.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16.0),
+                ),
+                side: BorderSide(color: Theme.of(context).primaryColor)
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.25,
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 40.0,
+                          width: 40.0,
+                          color: Theme.of(context).primaryColor,
+                        ),
+                        Text(
+                          "#14124870",
+                          style: TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Istaqom Wirawan Adi Pratama",
+                        style: TextStyle(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
+                      Text(
+                        "081311905812",
+                        style: TextStyle(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8.0),
+                        child: Text(
+                          "Status :", 
+                          style: TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        "Sedang Dikerjakan", 
+                        style: TextStyle(
+                          color: Theme.of(context).primaryColor,
+                        )
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 
@@ -87,6 +230,80 @@ class DoneScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+            child: ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.white,
+                padding: EdgeInsets.all(16.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(16.0),
+                ),
+                side: BorderSide(color: Theme.of(context).primaryColor)
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.25,
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 40.0,
+                          width: 40.0,
+                          color: Theme.of(context).primaryColor,
+                        ),
+                        Text(
+                          "#14124865",
+                          style: TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Muhammad Fathurrohim",
+                        style: TextStyle(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
+                      Text(
+                        "082157516776",
+                        style: TextStyle(
+                          color: Theme.of(context).primaryColor,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 8.0),
+                        child: Text(
+                          "Status :", 
+                          style: TextStyle(
+                            color: Theme.of(context).primaryColor,
+                          ),
+                        ),
+                      ),
+                      Text(
+                        "Selesai", 
+                        style: TextStyle(
+                          color: Theme.of(context).primaryColor,
+                        )
+                      )
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
