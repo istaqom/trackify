@@ -44,22 +44,27 @@ class _AdminHomeState extends State<AdminHome> {
       ),
       body: Column(
         children: [
-          ToggleButton(
-            width: double.infinity, 
-            height: 32.0, 
-            toggleBackgroundColor: Theme.of(context).primaryColor, 
-            toggleBorderColor: Colors.white, 
-            toggleColor: Colors.white, 
-            activeTextColor: Theme.of(context).primaryColor, 
-            inactiveTextColor: Colors.white, 
-            leftDescription: "going", 
-            rightDescription: "done", 
-            onLeftToggleActive: () {
-              _onItemTapped(0);
-            }, 
-            onRightToggleActive: () {
-              _onItemTapped(1);
-            }
+          Container(
+            width: double.infinity,
+            padding: EdgeInsets.all(10),
+            color: Theme.of(context).primaryColor,
+            child: ToggleButton(
+              width: MediaQuery.of(context).size.width / 1.1, 
+              height: 32.0, 
+              toggleBackgroundColor: Theme.of(context).primaryColor, 
+              toggleBorderColor: Colors.white, 
+              toggleColor: Colors.white, 
+              activeTextColor: Theme.of(context).primaryColor, 
+              inactiveTextColor: Colors.white, 
+              leftDescription: "going", 
+              rightDescription: "done", 
+              onLeftToggleActive: () {
+                _onItemTapped(0);
+              }, 
+              onRightToggleActive: () {
+                _onItemTapped(1);
+              }
+            ),
           ),
           _widgetOptions.elementAt(_selectedIndex)
         ],
